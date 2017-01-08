@@ -1,0 +1,22 @@
+@()(implicit req: RequestHeader)
+
+<html>
+    <head>
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+        crossorigin="anonymous"></script>
+        <script src="@routes.Assets.at("javascripts/index.js")"></script>
+
+    </head>
+    <body data-chat-ws-url="@routes.Chat.chat().webSocketURL()">
+        <h1>Chat</h1>
+
+        <h2>Messages</h2>
+        <ul id="messages">
+
+        </ul>
+
+        <input id="input" type="text"/>
+    </body>
+</html>

@@ -1,0 +1,5 @@
+GET         /                controllers.Chat.index
+
+GET         /chat            controllers.Chat.chat
+
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
